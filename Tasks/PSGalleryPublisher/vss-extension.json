@@ -1,0 +1,44 @@
+{
+    "manifestVersion": 1,
+    "id": "PSGalleryPublisher",
+    "name": "PowerShell Gallery Publisher",
+    "version": "0.1.11",
+    "publisher": "kenakamu",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Publish PowerShell module to PowerShell Gallery",
+    "categories": [
+        "Build and release"
+    ],
+    "tags" : [
+        "PowerShell"
+    ],
+    "content":{
+        "details":{
+            "path":"overview.md"
+        }
+    },
+    "icons": {
+        "default": "images/packageDefaultIcon.png"        
+    },
+    "files": [
+        {
+            "path": "PSGalleryPublisher", "addressable": true
+        }
+    ],
+    "contributions": [
+        {
+            "id": "powershell-gallery-publish-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "PSGalleryPublisher"
+            }
+        }
+    ]
+}
