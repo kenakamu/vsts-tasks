@@ -1,5 +1,5 @@
 # The easiest way to publish your PowerShell module!
-PowerShell gallery is a central repository for all modules so you should publish yours too!
+PowerShell Gallery is a central repository for all modules so you should publish yours too!
 
 # Setup and get key
 To publish your PowerShell module, create an account in PowerShell Gallery and obtain API Key.

@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "PSGalleryPublisher",
     "name": "PowerShell Gallery Publisher",
-    "version": "0.1.11",
+    "version": "0.1.12",
     "publisher": "kenakamu",
     "targets": [
         {
@@ -28,6 +28,9 @@
         {
             "path": "PSGalleryPublisher", "addressable": true
         }
+    ],
+    "galleryFlags": [
+        "Public"
     ],
     "contributions": [
         {
