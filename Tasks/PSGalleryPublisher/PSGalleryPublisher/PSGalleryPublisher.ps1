@@ -12,7 +12,7 @@ if (!(Test-Path -Path $nugetPath)) {
 }
 
 Write-Verbose "Download Nuget.exe to C:\nuget"
-Invoke-WebRequest -Uri "http://go.microsoft.com/fwlink/?LinkID=690216&clcid=0x409" -OutFile $nugetPath\Nuget.exe
+Invoke-WebRequest -Uri "https://dist.nuget.org/win-x86-commandline/latest/nuget.exe" -OutFile $nugetPath\Nuget.exe
 
 Write-Verbose "Add C:\nuget as %PATH%"
 $pathenv= [System.Environment]::GetEnvironmentVariable("path")
